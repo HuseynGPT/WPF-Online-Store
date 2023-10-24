@@ -1,0 +1,45 @@
+﻿<Window x:Class="Online_Store.Views.EditProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Online_Store.Views" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="EditProduct" Height="391" Width="372">
+    <Grid>
+        <Grid.Background>
+
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Color="#0075C2" Offset="0" />
+                    <GradientStop Color="#00AEEF" Offset="0.55" />
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid>
+
+            <Label  VerticalAlignment="Top" HorizontalAlignment="Left" Content="Name" Width="83" Height="25"/>
+            <TextBox  Name="NameTxtBox" Text="{Binding selected.Name, UpdateSourceTrigger=PropertyChanged}" Width="150" Height="30" HorizontalAlignment="Left" FontSize="11" VerticalAlignment="Top" Margin="50,0,0,0"/>
+
+            <Label VerticalAlignment="Top" HorizontalAlignment="Left" Content="Price" Width="83" Height="25" Margin="0 50 0 0"/>
+            <TextBox Name="PriceTxtBox" Text="{Binding selected.Price, UpdateSourceTrigger=PropertyChanged}" Width="50" Height="30" HorizontalAlignment="Left" FontSize="11" VerticalAlignment="Top" Margin="50,48,0,0"/>
+
+
+            <Label VerticalAlignment="Top" HorizontalAlignment="Left" Content="Quantity" Width="83" Height="25" Margin="0 90 0 0"/>
+            <TextBox Name="QuantityTextBox" Text="{Binding selected.Quantity, UpdateSourceTrigger=PropertyChanged}" Width="50" Height="30" HorizontalAlignment="Left" FontSize="11" VerticalAlignment="Top" Margin="50,90,0,0"/>
+
+            <Label VerticalAlignment="Top" HorizontalAlignment="Left" Content="Image" Width="48" Height="25" Margin="0,151,0,0"/>
+
+            <Button Name="uploadBtn" Content="Upload"  Width="78" HorizontalAlignment="Left" Margin="86,146,0,194" Click="uploadBtn_Click"/>
+
+            <Button HorizontalContentAlignment="Center"   Content="Apply" Margin="24,191,62,152"/>
+
+            <TextBlock  Width="100" Height="20" Text="Rate This App: " Margin="10,398,309,18"/>
+            <materialDesign:RatingBar Width="130" Height="40"  Margin="110,388,179,8" x:Name="BasicRatingBar" Value="3"/>
+            <Label FontSize="18" Content="Image Preview" Margin="236,-3,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <StackPanel Name="PreviewImage" Margin="241,34,17,212" />
+
+
+        </Grid>
+    </Grid>
+</Window>

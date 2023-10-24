@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Online_Store</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\add_48px.png" />
+    <None Remove="Resources\Bread.jpeg" />
+    <None Remove="Resources\buying_48px.png" />
+    <None Remove="Resources\Coca-Cola.jpeg" />
+    <None Remove="Resources\edit_property_24px.png" />
+    <None Remove="Resources\Fanta.jpeg" />
+    <None Remove="Resources\icons8_shopping_cart_16.png" />
+    <None Remove="Resources\search_32px.png" />
+    <None Remove="Resources\Snikers.png" />
+    <None Remove="Resources\SutasQayamq.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\SutasQayamq.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\add_48px.png" />
+    <Resource Include="Resources\Bread.jpeg" />
+    <Resource Include="Resources\buying_48px.png" />
+    <Resource Include="Resources\Coca-Cola.jpeg" />
+    <Resource Include="Resources\edit_property_24px.png" />
+    <Resource Include="Resources\Fanta.jpeg" />
+    <Resource Include="Resources\icons8_shopping_cart_16.png" />
+    <Resource Include="Resources\search_32px.png" />
+    <Resource Include="Resources\Snikers.png" />
+  </ItemGroup>
+
+</Project>
